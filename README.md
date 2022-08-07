@@ -11,7 +11,7 @@
 > - Windows:
 >    follow [pyenv-win](https://github.com/pyenv-win/pyenv-win)
 
-2. Additionaly, a docker implementation is also provided to generalize setup for everyone. ([Get started](https://github.com/pyenv-win/pyenv-win) with Docker if you haven't installed it yet.)
+2. Additionaly, a docker implementation is also provided to generalize setup for everyone. ([Get started](https://github.com/pyenv-win/pyenv-win) with Docker if you haven't already.)
 
 
 ## A) Running using Docker
