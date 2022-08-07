@@ -40,9 +40,60 @@ This is an example using [VS Code build Tasks](https://code.visualstudio.com/doc
   <summary>Example `.vscode/tasks.json` (click to expand)</summary>
   
   ```
-    function logSometing(something) {
-      console.log(`Logging: ${something}`);
-    }
+
+{
+	"version": "2.0.0",
+    "tasks": [
+		{
+			"type": "cppbuild",
+			"label": "Build with GCC 11.2.0",
+			"command": "/usr/local/bin/g++-11",
+			"args": [
+				"-std=c++20",
+				"-o",
+				"${workspaceFolder}/binding_cpp_root/build/bin/binding",
+				"-I",
+				"${workspaceFolder}/binding_cpp_root/include/binding",
+				"${workspaceFolder}/binding_cpp_root/src/*.cpp"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/local/bin/g++-11"
+		},
+		{
+			"type": "cppbuild",
+			"label": "Create Library with GCC (Shared Object)",
+			"command": "/usr/local/bin/g++-11",
+			"args": [
+				"-std=c++20",
+				"-o",
+				"${workspaceFolder}/binding_cpp_root\\build\\lib\\binding.so",
+				"-fpic",
+				"-shared",
+				"-I",
+				"${workspaceFolder}/binding_cpp_root/include/binding",
+				"${workspaceFolder}/binding_cpp_root/src/*.cpp"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: /usr/local/bin/g++-11"
+		},
+	]
+}
+
   ```
 </details>
 
