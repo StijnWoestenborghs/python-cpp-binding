@@ -18,7 +18,7 @@
 
 An ubuntu docker image with all the required dependencies is provided by `docker/Dockerfile`. The C++ binding is built in `docker/build_binding.sh` and both the C++ executable and the DLL in python are called by `docker/entrypoint.sh`. The entire project setup can be executed by:
 > 
->   `docker compose build binding`
+>   `docker compose build binding`  
 >   `docker compose up binding`
 >
 
@@ -40,7 +40,6 @@ This is an example using [VS Code build Tasks](https://code.visualstudio.com/doc
   <summary>Example `.vscode/tasks.json` (click to expand)</summary>
   
   ```
-
 {
 	"version": "2.0.0",
     "tasks": [
@@ -93,7 +92,6 @@ This is an example using [VS Code build Tasks](https://code.visualstudio.com/doc
 		},
 	]
 }
-
   ```
 </details>
 
