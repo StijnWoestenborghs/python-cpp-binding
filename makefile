@@ -22,7 +22,7 @@ tests:
 	. .venv/bin/activate && pytest --cov=src --cov-report=term-missing
 	make clean-pyc > /dev/null
 
-test-win:
+tests-win:
 	. .venv/Scripts/activate && pytest --cov=src --cov-report=term-missing
 	make clean-pyc > /dev/null
 
