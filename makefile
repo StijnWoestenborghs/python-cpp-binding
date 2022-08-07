@@ -35,4 +35,7 @@ main-win:
 	. .venv/Scripts/activate && python src/main.py
 
 executable:
+	./binding_cpp_root/build/bin/binding
+
+executable-win:
 	binding_cpp_root/build/bin/binding.exe

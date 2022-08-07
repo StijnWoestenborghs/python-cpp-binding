@@ -16,6 +16,9 @@ def main():
 
     value_out, done = counting_stars_cpp(value, n)
 
+    print(f"\t Done: {done}")
+    print(f"\t Value out: {value_out}\n")
+
 
 if __name__ == "__main__":
     main()

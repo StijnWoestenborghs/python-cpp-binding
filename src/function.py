@@ -14,6 +14,7 @@ def counting_stars_python(value: int, n: int) -> Tuple[int, bool]:
     return (value, done)
 
 
+@timeit
 def counting_stars_cpp(value: int, n: int) -> Tuple[int, bool]:
     # Serialize input
     input_json = json.dumps({
