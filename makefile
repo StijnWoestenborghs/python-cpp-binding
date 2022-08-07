@@ -18,7 +18,7 @@ clean-pyc:
 	find . -name "*~" -exec rm -f {} +
 	find . -name "__pycache__" -exec rm -fr {} +
 
-test: 
+tests: 
 	. .venv/bin/activate && pytest --cov=src --cov-report=term-missing
 	make clean-pyc > /dev/null
 
