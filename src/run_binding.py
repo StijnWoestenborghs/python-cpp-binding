@@ -3,7 +3,11 @@ import ctypes
 from ctypes import *
 from timeit import timeit
 
-libc = CDLL("binding_cpp_root/build/lib/binding.so")
+pathToDll = os.getcwd() + r"/binding_cpp_root/build/lib/binding.so"
+if not os.path.exists(pathToDll):
+    raise Exception(f'Could not locate: {pathToDll}')
+
+libc = CDLL(pathToDll)
 run_binding_external = libc.run_binding_external
 run_binding_external.argtypes = [c_char_p, c_int, POINTER(c_char_p), POINTER(c_int)]
 run_binding_external.restype = c_int
