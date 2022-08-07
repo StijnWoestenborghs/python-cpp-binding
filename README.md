@@ -39,7 +39,7 @@ This is an example using [VS Code build Tasks](https://code.visualstudio.com/doc
 <details>
   <summary>Example `.vscode/tasks.json` (click to expand)</summary>
   
-  ```javascript
+  ```
     function logSometing(something) {
       console.log(`Logging: ${something}`);
     }
@@ -50,7 +50,7 @@ This is an example using [VS Code build Tasks](https://code.visualstudio.com/doc
 
 When compiled correctly. The executable can be started as demonstrated in:
 - MacOS: `make executable`
-- Windows: `make executable-win`
+- Windows: `make executable-win`  
 And you should be able to run the python binding with:
 - MacOS: `make main`
 - Windows: `make main-win`
