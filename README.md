@@ -33,7 +33,7 @@ A virtual environment with all required packages is created by the simple comman
 
 2. **Build the C++ binding**
 
-Building the binding executable & DLL does depend on your setup and installed compiler.  
+Building the binding executable & the DLL does depend on your setup and installed compiler.  
 This is an example using [VS Code build Tasks](https://code.visualstudio.com/docs/cpp/config-linux) on MacOS with an installed GCC compiler, but other build configurations will work as well. 
 
 <details>
@@ -71,7 +71,7 @@ This is an example using [VS Code build Tasks](https://code.visualstudio.com/doc
 			"args": [
 				"-std=c++20",
 				"-o",
-				"${workspaceFolder}/binding_cpp_root\\build\\lib\\binding.so",
+				"${workspaceFolder}/binding_cpp_root/build/lib/binding.so",
 				"-fpic",
 				"-shared",
 				"-I",
@@ -105,6 +105,6 @@ And you should be able to run the python binding with:
 - MacOS: `make main`
 - Windows: `make main-win`
 
-Note that there are also two unittests provided. The first one tests the operation of the cpp binding given known input and output. The second one verifies the similarity between Python and C++ implementations. All  tests with a resulting code coverage report can be executed using:
+Note that there are also two unittests provided. The first one is testing the operation of the cpp binding given known input and output. The second one verifies the similarity between Python and C++ implementations. All unit tests, with a resulting code coverage report, can be executed using:
 - MacOS: `make tests`
 - Windows: `make tests-win`
