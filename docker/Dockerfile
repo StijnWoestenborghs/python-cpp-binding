@@ -10,11 +10,14 @@ RUN apt-get update && apt-get install -y \
 COPY ./requirements.txt /opt/requirements.txt
 RUN pip3 install -r /opt/requirements.txt
 
-# Coppy application
+# Build application
 COPY src /opt/src
 COPY binding_cpp_root /opt/binding_cpp_root
 
-# Build & Run main
+COPY docker/build_binding.sh /opt/build_binding.sh
+RUN chmod +x /opt/build_binding.sh && /opt/build_binding.sh
+
+# Run main
 COPY docker/entrypoint.sh /opt/entrypoint.sh
 RUN chmod +x /opt/entrypoint.sh
 CMD /opt/entrypoint.sh

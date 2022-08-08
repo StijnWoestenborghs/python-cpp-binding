@@ -15,12 +15,12 @@
 > - Windows:
 >    follow [pyenv-win](https://github.com/pyenv-win/pyenv-win)
 
-2. Additionaly, a docker implementation is also provided to generalize setup for everyone. ([Get started](https://github.com/pyenv-win/pyenv-win) with Docker if you haven't already.)
+2. Additionaly, a docker implementation is also provided to generalize the setup for everyone. ([Get started](https://github.com/pyenv-win/pyenv-win) with Docker if you haven't already.)
 
 
 ## A) Running using Docker
 
-An ubuntu docker image with all the required dependencies is provided by `docker/Dockerfile`. The C++ binding and both the C++ executable and the DLL in python are called by `docker/entrypoint.sh`. The entire project setup can be executed by:
+An ubuntu docker image with all the required dependencies is provided by `docker/Dockerfile`. The C++ binding is built in `docker/build_binding.sh` and both the C++ executable and the DLL in python are called by `docker/entrypoint.sh`. The entire project setup can be executed by:
 > 
 >   `docker compose build binding`  
 >   `docker compose up binding`
