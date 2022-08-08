@@ -1,14 +1,9 @@
 <h1 align='center'><b>python-cpp-binding</b></h1>
-<p align='center'>
-	<p align='center'>
-    In an environment where complex optimization algorithms are being developed for edge computing platforms with limited resources, choosing the right tech stack is just crucial.
-	</p>
-	<p align='center'>
-	On one side, Python provides an efficient coding environment with short development cycles and fast evaluation & visualization of performance. On the other hand, a compiled language such as C++ is well suited for embedded development because of its performance, speed- and resources-wise.
-	</p>
-	<p align='center'>
+<p align='center'><sub>
+    In an environment where complex optimization algorithms are being developed for edge computing platforms with limited resources, choosing the right tech stack is just crucial. <br> 
+	On one side, Python provides an efficient coding environment with short development cycles and fast evaluation & visualization of performance. On the other hand, a compiled language such as C++ is well suited for embedded development because of its performance, speed- and resources-wise. <br> 
 	Establishing a direct link between the two programming languages can enable the benefits of both. Python, C++ … Let’s talk!
-	</p>
+	</sub>
 </p>
 
 
