@@ -5,7 +5,7 @@
 
 
 int main(){
-    std::cout << "C++ function running as executable " << std::endl;
+    std::cout << "[EXECUTABLE] Counting stars as C++ executable " << std::endl;
 
     ExampleInputStruct input;
     input.value = 0;
@@ -17,6 +17,6 @@ int main(){
         output = counting_stars(input);
     } 
 
-    std::cout << "Done: " << output.done << std::endl;
-    std::cout << "value out: " << output.value_out << std::endl;
+    std::cout << "\t Done: " << output.done << std::endl;
+    std::cout << "\t Value out: " << output.value_out << std::endl;
 }
